@@ -1,0 +1,399 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  list-style-type: none;
+}
+html {
+  scroll-padding-top: 50px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  max-width: 1180px;
+  padding: 0rem 1rem;
+  margin: 0 auto;
+}
+.row {
+  max-width: 800px;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+}
+p,
+li {
+  font-size: 14px !important;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header {
+  background: black;
+  color: white;
+  position: relative;
+}
+header .navbar {
+  padding: 1rem 0rem;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background: black;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .bar {
+  display: none;
+}
+header .search_btn {
+  color: white;
+  background: transparent;
+}
+
+header a {
+  color: white !important;
+  transition: 0.3s linear;
+  font-size: 15px;
+  font-weight: 500;
+}
+header a:hover {
+  color: tomato !important;
+}
+header a.active {
+  color: tomato !important;
+}
+
+header .nav_item {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+header .modal {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #cccccc80;
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+}
+header .modal.show {
+  display: flex;
+  overflow-y: auto !important;
+  justify-content: center;
+  align-items: center;
+}
+header .m_search {
+  box-shadow: 0px 0px 1px 3px #cccccc8b;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  background-color: white;
+}
+
+header .m_search input {
+  padding: 0.7rem 0.4rem;
+  display: flex;
+  width: 100%;
+}
+header .m_search button {
+  background: black;
+  color: white;
+
+  padding: 1rem;
+}
+
+header .modal .remove {
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  color: black;
+  background: transparent;
+}
+
+.body-no-scroll {
+  overflow: hidden;
+}
+/* home */
+#home {
+  margin-top: 50px;
+}
+#home .mySlides {
+  position: relative;
+}
+
+#home .info {
+  position: absolute;
+  bottom: 5rem;
+  text-align: center;
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+}
+#home .info h1 {
+  margin-bottom: 1rem;
+}
+/* Brand */
+#brand {
+  padding: 3rem 0rem;
+}
+#brand .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#brand h3 {
+  margin-bottom: 1rem;
+}
+#brand p {
+  margin-bottom: 2rem;
+}
+#brand .person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+#brand .person .p_box {
+  text-align: center;
+  flex-basis: 170px;
+}
+#brand img {
+  border-radius: 8px;
+}
+#brand .p_box h6 {
+  margin-bottom: 1rem;
+}
+/* tour */
+#tour {
+  padding: 3rem 0rem;
+  background: black;
+  color: white;
+}
+
+#tour .heading {
+  text-align: center;
+}
+#tour h3,
+p {
+  margin-bottom: 1rem;
+}
+#tour i {
+  color: #eee7e7;
+}
+#tour .tour-date {
+  background: #ffffff;
+  color: #686363;
+  padding: 1rem;
+}
+#tour .single_date {
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  padding: 0.3rem;
+  font-size: 14px;
+}
+#tour .title {
+  background-color: orangered;
+  color: white;
+  height: 100%;
+}
+
+#tour .tour_card {
+  margin-top: 1.5rem;
+  color: #686363;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+#tour .single_card {
+  background: #fff;
+  padding-bottom: 1rem;
+}
+#tour .info {
+  padding: 0.5rem;
+}
+
+#tour h4,
+span,
+p {
+  margin-bottom: 0.8rem;
+}
+#tour span,
+p {
+  font-size: 14px;
+}
+
+#tour p {
+  color: #444;
+  margin-top: 0.5rem;
+}
+#tour button {
+  color: #eee7e7;
+  background: black;
+  padding: 8px 16px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.3s linear;
+}
+#tour button:hover {
+  background: tomato;
+  color: black;
+}
+/* contact */
+#contact {
+  padding: 3rem 0rem;
+}
+#contact .heading p {
+  margin-top: 1rem;
+}
+
+#contact ul {
+  line-height: 1.5rem;
+}
+#contact li a {
+  color: black !important;
+  font-size: 14px;
+}
+#contact li > i {
+  margin-right: 0.5rem;
+}
+
+#contact .contact_cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#contact .form {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 14px;
+}
+#contact .contact_cont button {
+  display: block;
+  margin: 0 auto;
+  background: black;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  margin-top: 1rem;
+}
+#contact .contact_cont button:hover {
+  background-color: tomato;
+  color: white;
+}
+
+#contact input {
+  padding: 0.4rem 0.3rem;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+}
+
+#contact form li {
+  line-height: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 3rem 0rem;
+}
+
+footer .social {
+  margin: 0 auto;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.2rem;
+}
+footer .social a {
+  color: rgb(7, 7, 6);
+}
+
+footer .social a:hover {
+  color: orange;
+}
+
+@media (max-width: 992px) {
+  #contact .contact_cont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  header .bar {
+    display: block;
+  }
+  .header .nav_item {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: black;
+    width: 100%;
+    /* top: -120%; */
+    display: none;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+  .header .nav_item.show {
+    display: block;
+  }
+  .header .nav_item a {
+    display: block;
+    line-height: 30px;
+  }
+
+  header .m_search input {
+    padding: 0.3rem 0.2rem;
+  }
+  header .m_search {
+    width: 90%;
+  }
+  header .m_search button {
+    padding: 0.5rem;
+  }
+
+  header .modal .remove {
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    color: black;
+    background: transparent;
+  }
+
+  #contact .contact_cont {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
